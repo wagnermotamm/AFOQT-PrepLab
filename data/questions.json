@@ -1,0 +1,1102 @@
+{
+  "version": 1,
+  "title": "Simulado de treino do AFOQT",
+  "source": "AFOQT Information Pamphlet",
+  "_comoEditar": "Este arquivo é o banco do simulado. Para incluir uma pergunta, copie um objeto de questions. Preencha id, theme, prompt, options, correct (o id da opção certa), hint, explanation e glossary. O id a/b/c/d/e é só o gabarito interno: na tela, a ordem das alternativas muda a cada tentativa.",
+  "themes": [
+    {
+      "id": "verbal-analogies",
+      "part": 1,
+      "name": "Analogias verbais",
+      "english": "Verbal Analogies",
+      "realItems": 25,
+      "realMinutes": 8,
+      "composites": ["Navegador-Técnico", "Aptidão acadêmica", "Verbal"],
+      "direction": "As duas primeiras palavras formam um par. Escolha a opção que completa o segundo par com a mesma relação."
+    },
+    {
+      "id": "arithmetic-reasoning",
+      "part": 2,
+      "name": "Raciocínio aritmético",
+      "english": "Arithmetic Reasoning",
+      "realItems": 25,
+      "realMinutes": 29,
+      "composites": ["Piloto", "Navegador-Técnico", "Aptidão acadêmica", "Quantitativo"],
+      "direction": "Resolva o problema com as operações do enunciado. Há uma alternativa mais próxima do resultado certo."
+    },
+    {
+      "id": "word-knowledge",
+      "part": 3,
+      "name": "Conhecimento de palavras",
+      "english": "Word Knowledge",
+      "realItems": 25,
+      "realMinutes": 5,
+      "composites": ["Aptidão acadêmica", "Verbal"],
+      "direction": "A palavra em destaque pede o sinônimo mais próximo. Cuidado com palavras parecidas que mudam o sentido."
+    },
+    {
+      "id": "math-knowledge",
+      "part": 4,
+      "name": "Conhecimento de matemática",
+      "english": "Math Knowledge",
+      "realItems": 25,
+      "realMinutes": 22,
+      "composites": ["Piloto", "Navegador-Técnico", "Aptidão acadêmica", "Quantitativo"],
+      "direction": "Use a regra do termo, da equação ou da figura geométrica. Uma das cinco afirmações ou valores é o correto."
+    },
+    {
+      "id": "table-reading",
+      "part": 7,
+      "name": "Leitura de tabela",
+      "english": "Table Reading",
+      "realItems": 40,
+      "realMinutes": 7,
+      "composites": ["Piloto", "Navegador-Técnico"],
+      "direction": "X é a coluna, no topo. Y é a linha, à esquerda. O número pedido está no cruzamento dos dois."
+    },
+    {
+      "id": "aviation-information",
+      "part": 8,
+      "name": "Informação de aviação",
+      "english": "Aviation Information",
+      "realItems": 20,
+      "realMinutes": 8,
+      "composites": ["Piloto"],
+      "direction": "Escolha o termo aeronáutico que responde à pergunta. O dicionário explica a peça, a força ou o ângulo no contexto do voo."
+    },
+    {
+      "id": "general-science",
+      "part": 9,
+      "name": "Ciências gerais",
+      "english": "General Science",
+      "realItems": 20,
+      "realMinutes": 10,
+      "composites": ["Navegador-Técnico"],
+      "direction": "Uma alternativa nomeia a unidade, o fenômeno ou o grupo certo. As outras são termos vizinhos, de outra grandeza."
+    }
+  ],
+  "notIncluded": [
+    {
+      "id": "instrument",
+      "part": 5,
+      "name": "Compreensão de instrumentos",
+      "english": "Instrument Comprehension",
+      "sample": 5,
+      "realItems": 20,
+      "realMinutes": 6,
+      "composites": ["Piloto"],
+      "why": "Cada item mostra o horizonte artificial, a bússola e quatro silhuetas de avião. Sem o desenho do panfleto, a alternativa não existe como texto."
+    },
+    {
+      "id": "block-counting",
+      "part": 6,
+      "name": "Contagem de blocos",
+      "english": "Block Counting",
+      "sample": 5,
+      "realItems": 20,
+      "realMinutes": 3,
+      "composites": ["Navegador-Técnico"],
+      "why": "É preciso ver a pilha de blocos e contar quantos tocam o bloco indicado."
+    },
+    {
+      "id": "rotated-blocks",
+      "part": 10,
+      "name": "Blocos rotacionados",
+      "english": "Rotated Blocks",
+      "sample": 5,
+      "realItems": 15,
+      "realMinutes": 13,
+      "composites": [],
+      "why": "É preciso comparar um sólido desenhado com as rotações. No panfleto, este subteste não entra nos cinco compostos."
+    },
+    {
+      "id": "hidden-figures",
+      "part": 11,
+      "name": "Figuras ocultas",
+      "english": "Hidden Figures",
+      "sample": 5,
+      "realItems": 15,
+      "realMinutes": 8,
+      "composites": [],
+      "why": "É preciso achar a figura simples dentro do desenho complexo, no mesmo tamanho e na mesma posição. Também não entra nos cinco compostos."
+    },
+    {
+      "id": "self-description",
+      "part": 12,
+      "name": "Inventário de autodescrição",
+      "english": "Self Description Inventory",
+      "sample": 10,
+      "realItems": 220,
+      "realMinutes": 40,
+      "composites": [],
+      "why": "São frases sobre o seu jeito de agir. O panfleto diz que não há resposta certa nem errada, então elas não entram na nota."
+    }
+  ],
+  "table": {
+    "x": [-3, -2, -1, 0, 1, 2, 3],
+    "rows": [
+      {"y": 3, "cells": [25, 26, 28, 30, 31, 32, 33]},
+      {"y": 2, "cells": [26, 28, 30, 32, 33, 34, 35]},
+      {"y": 1, "cells": [27, 29, 31, 33, 35, 36, 37]},
+      {"y": 0, "cells": [29, 30, 32, 34, 36, 37, 38]},
+      {"y": -1, "cells": [30, 32, 33, 35, 37, 38, 40]},
+      {"y": -2, "cells": [31, 33, 34, 36, 38, 39, 41]},
+      {"y": -3, "cells": [32, 34, 35, 37, 39, 40, 42]}
+    ]
+  },
+  "questions": [
+    {
+      "id": "va-1",
+      "theme": "verbal-analogies",
+      "prompt": "Rural is to sparse as urban is to",
+      "options": [
+        {"id": "a", "text": "noisy"},
+        {"id": "b", "text": "crowded"},
+        {"id": "c", "text": "hurried"},
+        {"id": "d", "text": "suburban"},
+        {"id": "e", "text": "suave"}
+      ],
+      "correct": "b",
+      "hint": "Sparse diz como é o lugar rural: pouca gente e espaço entre as coisas. Urban pede a palavra que descreve a cidade do mesmo jeito.",
+      "explanation": [
+        "A relação é característica do lugar. Rural combina com sparse (esparso). Urban combina com crowded (lotado).",
+        "Noisy e hurried podem existir na cidade, mas não são o par de sparse. Suburban é outro tipo de lugar, não uma característica. Suave, em inglês, não significa macio."
+      ],
+      "glossary": [
+        {"word": "Rural", "meaning": "Do campo, fora da cidade grande."},
+        {"word": "sparse", "meaning": "Esparso: com poucos elementos e espaço entre eles. Aqui, pouca gente."},
+        {"word": "urban", "meaning": "Urbano, da cidade."},
+        {"word": "noisy", "meaning": "Barulhento."},
+        {"word": "crowded", "meaning": "Lotado, cheio de gente."},
+        {"word": "hurried", "meaning": "Apressado, feito com pressa."},
+        {"word": "suburban", "meaning": "De subúrbio, na área residencial em volta da cidade."},
+        {"word": "suave", "meaning": "Falso amigo. Em inglês, suave quer dizer polido, sofisticado, de trato fácil. Não é o adjetivo suave do português."}
+      ]
+    },
+    {
+      "id": "va-2",
+      "theme": "verbal-analogies",
+      "prompt": "Infancy is to childhood as engagement is to",
+      "options": [
+        {"id": "a", "text": "discussion"},
+        {"id": "b", "text": "love"},
+        {"id": "c", "text": "bride"},
+        {"id": "d", "text": "ring"},
+        {"id": "e", "text": "marriage"}
+      ],
+      "correct": "e",
+      "hint": "A primeira palavra é a fase que vem logo antes da segunda. Infancy vem antes de childhood. Engagement vem antes de qual etapa?",
+      "explanation": [
+        "É uma sequência. A primeira infância (infancy) precede a infância (childhood). O noivado (engagement) precede o casamento (marriage).",
+        "Bride, ring e love aparecem nessa história, mas não são a etapa seguinte. Discussion não entra na sequência."
+      ],
+      "glossary": [
+        {"word": "Infancy", "meaning": "Primeira infância, a fase de bebê."},
+        {"word": "childhood", "meaning": "Infância, a fase de criança, depois da primeira infância."},
+        {"word": "engagement", "meaning": "Noivado. Não é emprego nem engajamento de rede social."},
+        {"word": "discussion", "meaning": "Discussão, conversa sobre um assunto."},
+        {"word": "love", "meaning": "Amor."},
+        {"word": "bride", "meaning": "Noiva."},
+        {"word": "ring", "meaning": "Anel. No noivado, é um objeto, não a etapa seguinte."},
+        {"word": "marriage", "meaning": "Casamento."}
+      ]
+    },
+    {
+      "id": "va-3",
+      "theme": "verbal-analogies",
+      "prompt": "Odd is to unusual as amusing is to",
+      "options": [
+        {"id": "a", "text": "humorous"},
+        {"id": "b", "text": "sad"},
+        {"id": "c", "text": "hilarious"},
+        {"id": "d", "text": "flippant"},
+        {"id": "e", "text": "commonplace"}
+      ],
+      "correct": "a",
+      "hint": "Odd e unusual têm quase o mesmo sentido e a mesma força. Hilarious é mais forte do que amusing. Procure o sinônimo mais próximo, não o exagero nem o oposto.",
+      "explanation": [
+        "A relação é de sinônimos no mesmo grau. Odd equivale a unusual. Amusing equivale a humorous.",
+        "Hilarious é muito mais forte. Sad e commonplace puxam para outro sentido. Flippant é irreverente, não apenas divertido."
+      ],
+      "glossary": [
+        {"word": "Odd", "meaning": "Estranho, esquisito."},
+        {"word": "unusual", "meaning": "Incomum, fora do habitual."},
+        {"word": "amusing", "meaning": "Divertido, que faz sorrir, sem ser uma gargalhada."},
+        {"word": "humorous", "meaning": "Humorístico, engraçado, no mesmo grau de amusing."},
+        {"word": "sad", "meaning": "Triste."},
+        {"word": "hilarious", "meaning": "Hilário, engraçado demais. É mais intenso do que amusing."},
+        {"word": "flippant", "meaning": "Irreverente, sem levar a sério. Não é só divertido."},
+        {"word": "commonplace", "meaning": "Banal, comum. É quase o oposto de unusual."}
+      ]
+    },
+    {
+      "id": "va-4",
+      "theme": "verbal-analogies",
+      "prompt": "Waterfall is to cascade as",
+      "options": [
+        {"id": "a", "text": "river is to fish"},
+        {"id": "b", "text": "ocean is to cross"},
+        {"id": "c", "text": "stream is to meander"},
+        {"id": "d", "text": "hurricane is to warn"},
+        {"id": "e", "text": "lake is to sail"}
+      ],
+      "correct": "c",
+      "hint": "Cascade não é um objeto perto da cachoeira: é o jeito como a água dela se move. Procure outro curso de água e o movimento típico dele.",
+      "explanation": [
+        "A relação é coisa e o seu movimento. A waterfall desce em cascade. O stream serpenteia, meander.",
+        "Peixe, atravessar, alertar e velejar são ações ou coisas ligadas ao lugar, mas não descrevem a forma do fluxo."
+      ],
+      "glossary": [
+        {"word": "Waterfall", "meaning": "Cachoeira."},
+        {"word": "cascade", "meaning": "Cair em cascata. Aqui é o movimento da água da cachoeira."},
+        {"word": "river", "meaning": "Rio."},
+        {"word": "fish", "meaning": "Peixe."},
+        {"word": "ocean", "meaning": "Oceano."},
+        {"word": "cross", "meaning": "Atravessar."},
+        {"word": "stream", "meaning": "Riacho, córrego."},
+        {"word": "meander", "meaning": "Serpentear, seguir em curvas. É o movimento típico de um riacho em terreno plano."},
+        {"word": "hurricane", "meaning": "Furacão."},
+        {"word": "warn", "meaning": "Alertar, avisar de um perigo."},
+        {"word": "lake", "meaning": "Lago."},
+        {"word": "sail", "meaning": "Navegar à vela."}
+      ]
+    },
+    {
+      "id": "va-5",
+      "theme": "verbal-analogies",
+      "prompt": "Cocoon is to butterfly as",
+      "options": [
+        {"id": "a", "text": "web is to spider"},
+        {"id": "b", "text": "den is to lion"},
+        {"id": "c", "text": "pouch is to kangaroo"},
+        {"id": "d", "text": "covey is to quail"},
+        {"id": "e", "text": "cave is to bear"}
+      ],
+      "correct": "c",
+      "hint": "Não procure só a casa do animal. O casulo é o estojo em que a borboleta se desenvolve. Qual opção liga o animal a uma bolsa parecida?",
+      "explanation": [
+        "O cocoon envolve a borboleta enquanto ela se forma. O pouch é a bolsa em que o filhote do canguru se desenvolve.",
+        "Web, den e cave são abrigos, mas não são o estojo do desenvolvimento. Covey é um bando, não um lugar."
+      ],
+      "glossary": [
+        {"word": "Cocoon", "meaning": "Casulo, o envoltório em que a lagarta vira borboleta."},
+        {"word": "butterfly", "meaning": "Borboleta."},
+        {"word": "web", "meaning": "Teia, no caso a teia da aranha."},
+        {"word": "spider", "meaning": "Aranha."},
+        {"word": "den", "meaning": "Toca, o abrigo de um animal."},
+        {"word": "lion", "meaning": "Leão."},
+        {"word": "pouch", "meaning": "Bolsa. No canguru, é onde o filhote fica e se desenvolve."},
+        {"word": "kangaroo", "meaning": "Canguru."},
+        {"word": "covey", "meaning": "Bando pequeno de aves, como codornas."},
+        {"word": "quail", "meaning": "Codorna."},
+        {"word": "cave", "meaning": "Caverna."},
+        {"word": "bear", "meaning": "Urso."}
+      ]
+    },
+    {
+      "id": "ar-1",
+      "theme": "arithmetic-reasoning",
+      "prompt": "A car traveled at 60 miles per hour for 2 1/2 hours. If one inch equals 20 miles on a map, how far has the car traveled on the map?",
+      "options": [
+        {"id": "a", "text": "7.5 inches"},
+        {"id": "b", "text": "8.3 inches"},
+        {"id": "c", "text": "9.7 inches"},
+        {"id": "d", "text": "10.5 inches"},
+        {"id": "e", "text": "15.0 inches"}
+      ],
+      "correct": "a",
+      "hint": "Faça em dois passos. Primeiro a distância real: velocidade vezes tempo. Depois converta milhas em polegadas do mapa. A cada 20 milhas, conte 1 polegada.",
+      "explanation": [
+        "Distância real: 60 × 2,5 = 150 milhas.",
+        "No mapa, 1 polegada vale 20 milhas: 150 ÷ 20 = 7,5 polegadas."
+      ],
+      "glossary": [
+        {"word": "traveled", "meaning": "Viajou, percorreu."},
+        {"word": "miles per hour", "meaning": "Milhas por hora. É a velocidade. Uma milha vale cerca de 1,6 km."},
+        {"word": "inch", "meaning": "Polegada, uma unidade de comprimento do mapa. Não é a distância real da viagem."},
+        {"word": "equals", "meaning": "Equivale a. Aqui, 1 polegada do mapa representa 20 milhas reais."},
+        {"word": "map", "meaning": "Mapa."},
+        {"word": "how far", "meaning": "Qual a distância. A pergunta pede a distância desenhada no mapa, não a distância real."}
+      ]
+    },
+    {
+      "id": "ar-2",
+      "theme": "arithmetic-reasoning",
+      "prompt": "What is the volume of a container that is 22 feet long, 15 feet wide, and 10 feet high?",
+      "options": [
+        {"id": "a", "text": "1369 cu. ft."},
+        {"id": "b", "text": "1500 cu. ft."},
+        {"id": "c", "text": "1650 cu. ft."},
+        {"id": "d", "text": "2209 cu. ft."},
+        {"id": "e", "text": "3300 cu. ft."}
+      ],
+      "correct": "e",
+      "hint": "O recipiente é uma caixa. O volume é comprimento × largura × altura. As três medidas entram na conta; nenhuma fica de fora.",
+      "explanation": [
+        "22 × 15 = 330.",
+        "330 × 10 = 3300 pés cúbicos."
+      ],
+      "glossary": [
+        {"word": "volume", "meaning": "Volume, o espaço interno da caixa."},
+        {"word": "container", "meaning": "Recipiente, caixa ou contentor."},
+        {"word": "long", "meaning": "De comprimento. 22 feet long = 22 pés de comprimento."},
+        {"word": "wide", "meaning": "De largura."},
+        {"word": "high", "meaning": "De altura."},
+        {"word": "feet", "meaning": "Pés. Um pé vale cerca de 30 cm. Aqui é a unidade das três medidas."},
+        {"word": "cu. ft.", "meaning": "Abreviação de cubic feet: pés cúbicos, a unidade de volume."}
+      ]
+    },
+    {
+      "id": "ar-3",
+      "theme": "arithmetic-reasoning",
+      "prompt": "A sport's fan spent a total of $450 on baseball tickets. If only $4 and $5 tickets were bought, and there was an equal number at each price, how many $5 tickets were bought?",
+      "options": [
+        {"id": "a", "text": "45"},
+        {"id": "b", "text": "50"},
+        {"id": "c", "text": "56"},
+        {"id": "d", "text": "72"},
+        {"id": "e", "text": "90"}
+      ],
+      "correct": "b",
+      "hint": "A quantidade dos dois preços é a mesma. Junte um ingresso de $4 com um de $5: o par custa $9. Veja quantos pares cabem em $450. Esse número é também a quantidade de ingressos de $5.",
+      "explanation": [
+        "Se há n ingressos de cada preço: 4n + 5n = 450.",
+        "9n = 450, então n = 50. Foram comprados 50 ingressos de $5."
+      ],
+      "glossary": [
+        {"word": "sport's fan", "meaning": "Torcedor. No panfleto a frase vem escrita assim; o sentido é quem comprou os ingressos."},
+        {"word": "spent", "meaning": "Gastou."},
+        {"word": "tickets", "meaning": "Ingressos."},
+        {"word": "equal number", "meaning": "A mesma quantidade. Há tantos ingressos de $4 quanto de $5."},
+        {"word": "price", "meaning": "Preço."},
+        {"word": "bought", "meaning": "Comprados."}
+      ]
+    },
+    {
+      "id": "ar-4",
+      "theme": "arithmetic-reasoning",
+      "prompt": "A student spent 2 hours studying, 1 hour doing laundry, and 1 1/2 hours watching television. What percentage of time was spent doing laundry?",
+      "options": [
+        {"id": "a", "text": "44 percent"},
+        {"id": "b", "text": "37 percent"},
+        {"id": "c", "text": "33 percent"},
+        {"id": "d", "text": "22 percent"},
+        {"id": "e", "text": "11 percent"}
+      ],
+      "correct": "d",
+      "hint": "Some primeiro todo o tempo. A porcentagem é só a parte da lavanderia dividida por esse total. Não use as 2 horas de estudo no numerador.",
+      "explanation": [
+        "Total: 2 + 1 + 1,5 = 4,5 horas.",
+        "Lavanderia: 1 ÷ 4,5 = 0,222…, ou seja, 22 por cento.",
+        "44 por cento seria o estudo (2 ÷ 4,5). 33 por cento seria a televisão (1,5 ÷ 4,5)."
+      ],
+      "glossary": [
+        {"word": "spent", "meaning": "Passou, gastou esse tempo. Não é dinheiro nesta questão."},
+        {"word": "studying", "meaning": "Estudando."},
+        {"word": "laundry", "meaning": "Lavar roupa, a lavanderia."},
+        {"word": "watching", "meaning": "Assistindo."},
+        {"word": "percentage", "meaning": "Porcentagem: a parte dividida pelo total, vezes 100."}
+      ]
+    },
+    {
+      "id": "ar-5",
+      "theme": "arithmetic-reasoning",
+      "prompt": "If a train can travel 405 miles in 4 1/2 hours, how far can it travel in 30 minutes?",
+      "options": [
+        {"id": "a", "text": "45 miles"},
+        {"id": "b", "text": "53 miles"},
+        {"id": "c", "text": "60 miles"},
+        {"id": "d", "text": "81 miles"},
+        {"id": "e", "text": "90 miles"}
+      ],
+      "correct": "a",
+      "hint": "Ache a velocidade: milhas divididas pelas horas. Trinta minutos são meia hora, não 30 horas. Aplique essa fração de hora na velocidade.",
+      "explanation": [
+        "405 ÷ 4,5 = 90 milhas por hora.",
+        "Em meia hora: 90 × 0,5 = 45 milhas.",
+        "90 milhas seria a distância de uma hora inteira, não de 30 minutos."
+      ],
+      "glossary": [
+        {"word": "train", "meaning": "Trem."},
+        {"word": "travel", "meaning": "Percorrer, viajar."},
+        {"word": "miles", "meaning": "Milhas. Cerca de 1,6 km cada."},
+        {"word": "hours", "meaning": "Horas. 4 1/2 hours = 4 horas e meia."},
+        {"word": "minutes", "meaning": "Minutos. 30 minutes = meia hora."},
+        {"word": "how far", "meaning": "Qual a distância percorrida nesse tempo menor."}
+      ]
+    },
+    {
+      "id": "wk-1",
+      "theme": "word-knowledge",
+      "prompt": "REPLENISH",
+      "options": [
+        {"id": "a", "text": "furnish"},
+        {"id": "b", "text": "provide"},
+        {"id": "c", "text": "refill"},
+        {"id": "d", "text": "stock"},
+        {"id": "e", "text": "refinish"}
+      ],
+      "correct": "c",
+      "hint": "Imagine um copo que esvaziou ou uma prateleira que acabou. A palavra pede a ação de completar de novo, não a de mobiliar nem a de dar verniz.",
+      "explanation": [
+        "Replenish significa encher ou repor o que acabou. O sinônimo mais justo é refill.",
+        "Furnish é mobiliar ou fornecer. Provide é prover. Stock é estocar. Refinish é renovar o acabamento de uma superfície: o prefixo re- engana, mas o sentido é outro."
+      ],
+      "glossary": [
+        {"word": "REPLENISH", "meaning": "Repor, encher de novo o que foi gasto ou esvaziado."},
+        {"word": "furnish", "meaning": "Mobiliar um cômodo ou fornecer alguma coisa."},
+        {"word": "provide", "meaning": "Prover, fornecer, colocar à disposição."},
+        {"word": "refill", "meaning": "Encher novamente."},
+        {"word": "stock", "meaning": "Estocar, abastecer um estoque."},
+        {"word": "refinish", "meaning": "Renovar o acabamento, como verniz ou pintura. Não é encher de novo."}
+      ]
+    },
+    {
+      "id": "wk-2",
+      "theme": "word-knowledge",
+      "prompt": "PATHETIC",
+      "options": [
+        {"id": "a", "text": "sorrowful"},
+        {"id": "b", "text": "dejected"},
+        {"id": "c", "text": "regretful"},
+        {"id": "d", "text": "pitiful"},
+        {"id": "e", "text": "depressed"}
+      ],
+      "correct": "d",
+      "hint": "Não é o sentimento de quem está triste por dentro. É a impressão que a cena causa em quem olha.",
+      "explanation": [
+        "Pathetic descreve algo lastimável, que provoca pena. O mais próximo é pitiful.",
+        "Sorrowful, dejected, regretful e depressed descrevem o estado de quem sente tristeza, abatimento, arrependimento ou depressão."
+      ],
+      "glossary": [
+        {"word": "PATHETIC", "meaning": "Lastimável, que causa pena em quem vê."},
+        {"word": "sorrowful", "meaning": "Cheio de tristeza, pesaroso."},
+        {"word": "dejected", "meaning": "Abatido, desanimado."},
+        {"word": "regretful", "meaning": "Arrependido."},
+        {"word": "pitiful", "meaning": "Digno de pena, que desperta compaixão."},
+        {"word": "depressed", "meaning": "Deprimido."}
+      ]
+    },
+    {
+      "id": "wk-3",
+      "theme": "word-knowledge",
+      "prompt": "BLUNDER",
+      "options": [
+        {"id": "a", "text": "err"},
+        {"id": "b", "text": "sneak"},
+        {"id": "c", "text": "omit"},
+        {"id": "d", "text": "confuse"},
+        {"id": "e", "text": "shuffle"}
+      ],
+      "correct": "a",
+      "hint": "Aqui a palavra funciona como verbo. Pense em alguém que fez uma besteira clara, um erro.",
+      "explanation": [
+        "To blunder é cometer um erro grosseiro. O verbo mais próximo é err.",
+        "Sneak é agir às escondidas. Omit é deixar de fora. Confuse é confundir. Shuffle é embaralhar ou arrastar os pés."
+      ],
+      "glossary": [
+        {"word": "BLUNDER", "meaning": "Cometer uma besteira, um erro grosseiro. Nesta questão é verbo, como as alternativas."},
+        {"word": "err", "meaning": "Errar, cometer um engano."},
+        {"word": "sneak", "meaning": "Agir ou entrar às escondidas."},
+        {"word": "omit", "meaning": "Omitir, deixar de fora."},
+        {"word": "confuse", "meaning": "Confundir, misturar ideias."},
+        {"word": "shuffle", "meaning": "Embaralhar, ou andar arrastando os pés."}
+      ]
+    },
+    {
+      "id": "wk-4",
+      "theme": "word-knowledge",
+      "prompt": "MEDIATOR",
+      "options": [
+        {"id": "a", "text": "interviewer"},
+        {"id": "b", "text": "meddler"},
+        {"id": "c", "text": "peacemaker"},
+        {"id": "d", "text": "coach"},
+        {"id": "e", "text": "defender"}
+      ],
+      "correct": "c",
+      "hint": "Essa pessoa entra no meio de um conflito para os dois lados chegarem a um acordo. Não é quem treina, nem quem só se intromete.",
+      "explanation": [
+        "Mediator é quem faz a mediação para apaziguar. O sinônimo é peacemaker.",
+        "Meddler parece no som, mas é o intrometido. Interviewer entrevista, coach treina e defender defende um dos lados."
+      ],
+      "glossary": [
+        {"word": "MEDIATOR", "meaning": "Mediador, quem ajuda dois lados em conflito a chegar a um acordo."},
+        {"word": "interviewer", "meaning": "Entrevistador."},
+        {"word": "meddler", "meaning": "Intrometido. O som lembra mediator, mas o sentido é negativo."},
+        {"word": "peacemaker", "meaning": "Pacificador, quem promove a paz entre as partes."},
+        {"word": "coach", "meaning": "Treinador."},
+        {"word": "defender", "meaning": "Defensor, quem protege um dos lados."}
+      ]
+    },
+    {
+      "id": "wk-5",
+      "theme": "word-knowledge",
+      "prompt": "LUCIDITY",
+      "options": [
+        {"id": "a", "text": "clarity"},
+        {"id": "b", "text": "brightness"},
+        {"id": "c", "text": "greed"},
+        {"id": "d", "text": "delirium"},
+        {"id": "e", "text": "speed"}
+      ],
+      "correct": "a",
+      "hint": "Pense numa explicação fácil de acompanhar, sem névoa. Não é brilho de lâmpada nem velocidade.",
+      "explanation": [
+        "Lucidity é a qualidade do que é lúcido, claro para a mente. O sinônimo é clarity.",
+        "Brightness é brilho. Greed é ganância. Delirium é o oposto de lucidez. Speed é velocidade."
+      ],
+      "glossary": [
+        {"word": "LUCIDITY", "meaning": "Lucidez, clareza de pensamento ou de expressão."},
+        {"word": "clarity", "meaning": "Clareza."},
+        {"word": "brightness", "meaning": "Brilho, luminosidade."},
+        {"word": "greed", "meaning": "Ganância, avidez."},
+        {"word": "delirium", "meaning": "Delírio, confusão mental. É o contrário da lucidez."},
+        {"word": "speed", "meaning": "Velocidade."}
+      ]
+    },
+    {
+      "id": "mk-1",
+      "theme": "math-knowledge",
+      "prompt": "is equal to",
+      "display": "fraction-sum",
+      "terms": [["17", "20"], ["6", "100"], ["15", "50"]],
+      "options": [
+        {"id": "a", "text": "43/50"},
+        {"id": "b", "text": "111/100"},
+        {"id": "c", "text": "121/100"},
+        {"id": "d", "text": "83/50"},
+        {"id": "e", "text": "289/25"}
+      ],
+      "correct": "c",
+      "hint": "Use o denominador 100 para as três frações. 17/20 vira quantos centésimos? 15/50 também. Só depois some os numeradores.",
+      "explanation": [
+        "17/20 = 85/100.",
+        "6/100 continua 6/100.",
+        "15/50 = 30/100.",
+        "85 + 6 + 30 = 121, sobre 100. O resultado é 121/100."
+      ],
+      "glossary": [
+        {"word": "equal", "meaning": "Igual. A soma das três frações deve ser reescrita como uma só."}
+      ]
+    },
+    {
+      "id": "mk-2",
+      "theme": "math-knowledge",
+      "prompt": "If 5v − u = −2 and −v + 9u = 18, then the simultaneous solution of the given equation is",
+      "options": [
+        {"id": "a", "text": "u = 3, v = 9"},
+        {"id": "b", "text": "u = 2, v = 0"},
+        {"id": "c", "text": "u = 1, v = −9"},
+        {"id": "d", "text": "u = −2, v = −36"},
+        {"id": "e", "text": "u = 3, v = −15"}
+      ],
+      "correct": "b",
+      "hint": "Isole u na primeira equação: u fica em função de v. Troque esse u na segunda equação. O termo com v deve se anular e sobrar um valor simples.",
+      "explanation": [
+        "Da primeira equação: u = 5v + 2.",
+        "Na segunda: −v + 9(5v + 2) = 18.",
+        "−v + 45v + 18 = 18, então 44v = 0 e v = 0.",
+        "u = 5(0) + 2 = 2. A solução é u = 2 e v = 0."
+      ],
+      "glossary": [
+        {"word": "simultaneous", "meaning": "Simultânea: as duas equações valem ao mesmo tempo, com o mesmo u e o mesmo v."},
+        {"word": "solution", "meaning": "Solução, o par de valores que satisfaz as duas equações."},
+        {"word": "equation", "meaning": "Equação. O panfleto usa o singular, mas o sistema tem duas."}
+      ]
+    },
+    {
+      "id": "mk-3",
+      "theme": "math-knowledge",
+      "prompt": "Which of the following statements is false? A triangle can have",
+      "options": [
+        {"id": "a", "text": "three equal angles"},
+        {"id": "b", "text": "one obtuse angle"},
+        {"id": "c", "text": "three equal sides"},
+        {"id": "d", "text": "two right angles"},
+        {"id": "e", "text": "three acute angles"}
+      ],
+      "correct": "d",
+      "hint": "A soma dos ângulos internos é 180°. Veja qual das frases gastaria esses 180° antes de formar o terceiro ângulo.",
+      "explanation": [
+        "Três ângulos iguais é possível: 60°, 60° e 60°. Um ângulo obtuso também. Três lados iguais também. Três ângulos agudos também.",
+        "Dois ângulos retos já somam 180°. O terceiro ângulo seria 0°, e isso não forma um triângulo. A frase falsa é two right angles."
+      ],
+      "glossary": [
+        {"word": "false", "meaning": "Falsa. A pergunta pede a frase que não pode acontecer, não a que pode."},
+        {"word": "triangle", "meaning": "Triângulo. A soma dos ângulos internos é 180°."},
+        {"word": "equal", "meaning": "Iguais."},
+        {"word": "angles", "meaning": "Ângulos."},
+        {"word": "obtuse", "meaning": "Obtuso: maior que 90° e menor que 180°. Um triângulo pode ter um ângulo obtuso, nunca dois."},
+        {"word": "sides", "meaning": "Lados."},
+        {"word": "right angles", "meaning": "Ângulos retos, de 90° cada."},
+        {"word": "acute", "meaning": "Agudo: menor que 90°. Um triângulo pode ter os três ângulos agudos."}
+      ]
+    },
+    {
+      "id": "mk-4",
+      "theme": "math-knowledge",
+      "prompt": "The value of",
+      "trail": "is equal to",
+      "display": "neg-ninth-sqrt",
+      "options": [
+        {"id": "a", "text": "0"},
+        {"id": "b", "text": "−1"},
+        {"id": "c", "text": "1"},
+        {"id": "d", "text": "−9"},
+        {"id": "e", "text": "9"}
+      ],
+      "correct": "b",
+      "hint": "Calcule primeiro a raiz. A raiz quadrada usual de 81 é positiva. Só depois multiplique pela fração negativa.",
+      "explanation": [
+        "A raiz quadrada de 81 é 9.",
+        "(−1/9) × 9 = −1."
+      ],
+      "glossary": [
+        {"word": "value", "meaning": "Valor numérico da expressão."},
+        {"word": "equal", "meaning": "Igual a."},
+        {"word": "−1/9", "meaning": "Menos um nono. Divida 1 por 9 e conserve o sinal negativo. É o fator que multiplica a raiz."},
+        {"word": "√81", "meaning": "Raiz quadrada de 81. O resultado usado aqui é o positivo, 9."}
+      ]
+    },
+    {
+      "id": "mk-5",
+      "theme": "math-knowledge",
+      "prompt": "The factors of 30x² − 30 are",
+      "options": [
+        {"id": "a", "text": "(5x − 6) and (6x + 5)"},
+        {"id": "b", "text": "(15x + 5) and (2x − 6)"},
+        {"id": "c", "text": "(5x − 6) and (6x − 5)"},
+        {"id": "d", "text": "(30x − 5) and (x + 6)"},
+        {"id": "e", "text": "(5x + 5) and (6x − 6)"}
+      ],
+      "correct": "e",
+      "hint": "Tire o fator comum 30: fica 30(x² − 1), que é 30(x − 1)(x + 1). Procure o par de binômios que, multiplicado, devolve 30x² − 30, sem sobrar um termo com x.",
+      "explanation": [
+        "(5x + 5)(6x − 6) = 5(x + 1) × 6(x − 1) = 30(x + 1)(x − 1).",
+        "30(x² − 1) = 30x² − 30. Esse é o par pedido.",
+        "Nos outros pares sobra um termo do meio, ou o produto não é 30x² − 30."
+      ],
+      "glossary": [
+        {"word": "factors", "meaning": "Fatores. São expressões que, multiplicadas, reconstroem o polinômio."},
+        {"word": "and", "meaning": "E. Cada alternativa traz dois fatores que devem ser multiplicados."}
+      ]
+    },
+    {
+      "id": "tr-1",
+      "theme": "table-reading",
+      "prompt": "The X value is +1 and the Y value is +2. Which number is at the intersection of that column and that row?",
+      "usesTable": true,
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "a", "text": "35"},
+        {"id": "b", "text": "36"},
+        {"id": "c", "text": "30"},
+        {"id": "d", "text": "33"},
+        {"id": "e", "text": "34"}
+      ],
+      "correct": "d",
+      "hint": "Não some +1 com +2. X = +1 escolhe a coluna. Y = +2 escolhe a linha. Leia só a célula em que os dois se encontram.",
+      "explanation": [
+        "A coluna +1 e a linha +2 se cruzam em 33."
+      ],
+      "glossary": [
+        {"word": "X value", "meaning": "O valor de X escolhe a coluna, lida no topo da tabela."},
+        {"word": "Y value", "meaning": "O valor de Y escolhe a linha, lida na esquerda da tabela."},
+        {"word": "intersection", "meaning": "Cruzamento: a célula em que a coluna do X encontra a linha do Y."},
+        {"word": "column", "meaning": "Coluna, a faixa vertical."},
+        {"word": "row", "meaning": "Linha, a faixa horizontal."}
+      ]
+    },
+    {
+      "id": "tr-2",
+      "theme": "table-reading",
+      "prompt": "The X value is 0 and the Y value is −3. Which number is at the intersection of that column and that row?",
+      "usesTable": true,
+      "x": 0,
+      "y": -3,
+      "options": [
+        {"id": "a", "text": "29"},
+        {"id": "b", "text": "37"},
+        {"id": "c", "text": "39"},
+        {"id": "d", "text": "30"},
+        {"id": "e", "text": "36"}
+      ],
+      "correct": "b",
+      "hint": "X = 0 é a coluna do meio, não a primeira. Y = −3 é a última linha, embaixo. Siga a coluna central até essa linha.",
+      "explanation": [
+        "A coluna 0 e a linha −3 se cruzam em 37."
+      ],
+      "glossary": [
+        {"word": "X value", "meaning": "O valor de X escolhe a coluna, no topo. Zero é a coluna central."},
+        {"word": "Y value", "meaning": "O valor de Y escolhe a linha, à esquerda. −3 é a linha de baixo."},
+        {"word": "intersection", "meaning": "Cruzamento da coluna com a linha."},
+        {"word": "column", "meaning": "Coluna vertical."},
+        {"word": "row", "meaning": "Linha horizontal."}
+      ]
+    },
+    {
+      "id": "tr-3",
+      "theme": "table-reading",
+      "prompt": "The X value is −2 and the Y value is +3. Which number is at the intersection of that column and that row?",
+      "usesTable": true,
+      "x": -2,
+      "y": 3,
+      "options": [
+        {"id": "a", "text": "26"},
+        {"id": "b", "text": "32"},
+        {"id": "c", "text": "34"},
+        {"id": "d", "text": "28"},
+        {"id": "e", "text": "40"}
+      ],
+      "correct": "a",
+      "hint": "X negativo fica à esquerda do zero. Y positivo fica na parte de cima. Cruze a coluna −2 com a primeira linha, +3.",
+      "explanation": [
+        "A coluna −2 e a linha +3 se cruzam em 26."
+      ],
+      "glossary": [
+        {"word": "X value", "meaning": "Escolhe a coluna. −2 é a segunda coluna, à esquerda do zero."},
+        {"word": "Y value", "meaning": "Escolhe a linha. +3 é a linha de cima."},
+        {"word": "intersection", "meaning": "A célula do cruzamento."},
+        {"word": "column", "meaning": "Coluna vertical."},
+        {"word": "row", "meaning": "Linha horizontal."}
+      ]
+    },
+    {
+      "id": "tr-4",
+      "theme": "table-reading",
+      "prompt": "The X value is −1 and the Y value is 0. Which number is at the intersection of that column and that row?",
+      "usesTable": true,
+      "x": -1,
+      "y": 0,
+      "options": [
+        {"id": "a", "text": "33"},
+        {"id": "b", "text": "30"},
+        {"id": "c", "text": "35"},
+        {"id": "d", "text": "36"},
+        {"id": "e", "text": "32"}
+      ],
+      "correct": "e",
+      "hint": "Y = 0 é a linha do meio, não a coluna. X = −1 é a coluna imediatamente à esquerda do zero. Não troque os dois eixos.",
+      "explanation": [
+        "A coluna −1 e a linha 0 se cruzam em 32.",
+        "30 está na mesma linha, mas na coluna −2. Trocar X com Y leva a outra célula."
+      ],
+      "glossary": [
+        {"word": "X value", "meaning": "Escolhe a coluna no topo. −1 fica logo à esquerda da coluna 0."},
+        {"word": "Y value", "meaning": "Escolhe a linha à esquerda. 0 é a linha central."},
+        {"word": "intersection", "meaning": "Cruzamento dos dois valores."},
+        {"word": "column", "meaning": "Coluna, eixo do X."},
+        {"word": "row", "meaning": "Linha, eixo do Y."}
+      ]
+    },
+    {
+      "id": "tr-5",
+      "theme": "table-reading",
+      "prompt": "The X value is +3 and the Y value is −1. Which number is at the intersection of that column and that row?",
+      "usesTable": true,
+      "x": 3,
+      "y": -1,
+      "options": [
+        {"id": "a", "text": "41"},
+        {"id": "b", "text": "27"},
+        {"id": "c", "text": "40"},
+        {"id": "d", "text": "38"},
+        {"id": "e", "text": "39"}
+      ],
+      "correct": "c",
+      "hint": "X = +3 é a última coluna, à direita. Y = −1 é a linha logo abaixo do zero. O canto da tabela não é automaticamente a resposta: confira a linha.",
+      "explanation": [
+        "A coluna +3 e a linha −1 se cruzam em 40.",
+        "41 está na linha −2, mesma coluna. 42 estaria na linha −3."
+      ],
+      "glossary": [
+        {"word": "X value", "meaning": "Escolhe a coluna. +3 é a última coluna à direita."},
+        {"word": "Y value", "meaning": "Escolhe a linha. −1 é a primeira linha abaixo do zero."},
+        {"word": "intersection", "meaning": "Célula em que essa coluna e essa linha se encontram."},
+        {"word": "column", "meaning": "Coluna vertical."},
+        {"word": "row", "meaning": "Linha horizontal."}
+      ]
+    },
+    {
+      "id": "ai-1",
+      "theme": "aviation-information",
+      "prompt": "The rearward retarding force of airplane drag is opposed by",
+      "options": [
+        {"id": "a", "text": "weight"},
+        {"id": "b", "text": "lift"},
+        {"id": "c", "text": "thrust"},
+        {"id": "d", "text": "tension"},
+        {"id": "e", "text": "compression"}
+      ],
+      "correct": "c",
+      "hint": "Há quatro forças no voo: peso, sustentação, arrasto e tração. O arrasto segura o avião para trás. Qual delas empurra para a frente?",
+      "explanation": [
+        "Drag é o arrasto, para trás. Thrust é a tração do motor, para a frente. Uma se opõe à outra.",
+        "Weight é o peso, para baixo. Lift é a sustentação, para cima. Tension e compression não são as forças opostas ao arrasto neste modelo."
+      ],
+      "glossary": [
+        {"word": "rearward", "meaning": "Para trás, no sentido da cauda."},
+        {"word": "retarding", "meaning": "Que retarda, que segura o movimento."},
+        {"word": "drag", "meaning": "Arrasto: a força do ar que puxa o avião para trás, contra o avanço."},
+        {"word": "opposed", "meaning": "Contrariada, equilibrada por uma força em sentido oposto."},
+        {"word": "weight", "meaning": "Peso, a força da gravidade para baixo."},
+        {"word": "lift", "meaning": "Sustentação, a força da asa para cima."},
+        {"word": "thrust", "meaning": "Tração, a força do motor que empurra o avião para a frente."},
+        {"word": "tension", "meaning": "Tração no sentido de esticar um material. Não é a força de propulsão do avião."},
+        {"word": "compression", "meaning": "Compressão, apertar um material. Não é a força que vence o arrasto."}
+      ]
+    },
+    {
+      "id": "ai-2",
+      "theme": "aviation-information",
+      "prompt": "The cowling is located",
+      "options": [
+        {"id": "a", "text": "on the landing gear"},
+        {"id": "b", "text": "around the engine"},
+        {"id": "c", "text": "close to the tail"},
+        {"id": "d", "text": "on the wing"},
+        {"id": "e", "text": "inside the fuselage"}
+      ],
+      "correct": "b",
+      "hint": "Pense no capô de um carro, só que no avião. É a cobertura em volta de uma peça que esquenta e precisa de ar.",
+      "explanation": [
+        "Cowling é a carenagem que envolve o motor, para proteger e conduzir o ar de refrigeração.",
+        "Não fica no trem de pouso, na cauda, na asa nem simplesmente dentro da fuselagem."
+      ],
+      "glossary": [
+        {"word": "cowling", "meaning": "Carenagem do motor, a cobertura aerodinâmica ao redor dele."},
+        {"word": "located", "meaning": "Localizada. A pergunta pede onde a peça fica."},
+        {"word": "landing gear", "meaning": "Trem de pouso, o conjunto de rodas e pernas que apoia o avião no solo."},
+        {"word": "engine", "meaning": "Motor."},
+        {"word": "tail", "meaning": "Cauda, a parte de trás do avião."},
+        {"word": "wing", "meaning": "Asa."},
+        {"word": "fuselage", "meaning": "Fuselagem, o corpo central do avião."}
+      ]
+    },
+    {
+      "id": "ai-3",
+      "theme": "aviation-information",
+      "prompt": "Airport taxiways are identified at night by omnidirectional edge lights. What color are the lights?",
+      "options": [
+        {"id": "a", "text": "white"},
+        {"id": "b", "text": "amber"},
+        {"id": "c", "text": "alternate red and green"},
+        {"id": "d", "text": "green"},
+        {"id": "e", "text": "blue"}
+      ],
+      "correct": "e",
+      "hint": "Pista de pouso e caminho de táxi não usam a mesma cor. A borda da pista costuma ser branca. O caminho por onde o avião rola até a pista tem outra cor, bem marcada à noite.",
+      "explanation": [
+        "As luzes de borda da taxiway são azuis.",
+        "Branco é típico da borda da pista. Verde aparece no início da pista. Vermelho e verde alternados não identificam a taxiway."
+      ],
+      "glossary": [
+        {"word": "taxiways", "meaning": "Caminhos de táxi: as pistas do pátio por onde o avião rola entre o pátio e a pista de pouso. Não é a pista de decolagem."},
+        {"word": "omnidirectional", "meaning": "Que se vê de todas as direções, não um farol apontado para um lado só."},
+        {"word": "edge lights", "meaning": "Luzes de borda, instaladas ao longo da margem do caminho."},
+        {"word": "white", "meaning": "Branco. É a cor usual da borda da pista de pouso, não da taxiway."},
+        {"word": "amber", "meaning": "Âmbar, um amarelo alaranjado."},
+        {"word": "alternate", "meaning": "Alternadas: uma cor e depois a outra."},
+        {"word": "green", "meaning": "Verde. No aeroporto, marca sobretudo a cabeceira, o começo da pista utilizável."},
+        {"word": "blue", "meaning": "Azul. É a cor das luzes de borda da taxiway."}
+      ]
+    },
+    {
+      "id": "ai-4",
+      "theme": "aviation-information",
+      "prompt": "If the aircraft ammeter is indicating a minus value, this means the",
+      "options": [
+        {"id": "a", "text": "generator or alternator output is inadequate"},
+        {"id": "b", "text": "electrical system is functioning normally"},
+        {"id": "c", "text": "battery should be turned off"},
+        {"id": "d", "text": "battery is adequately charged"},
+        {"id": "e", "text": "battery requires water"}
+      ],
+      "correct": "a",
+      "hint": "O amperímetro mostra o sentido da corrente da bateria. Valor positivo: a bateria está recebendo carga. Valor negativo: ela está entregando energia. Por que ela precisaria entregar energia com o motor em funcionamento?",
+      "explanation": [
+        "Valor negativo significa descarga. O gerador ou o alternador não está produzindo o bastante, e a bateria cobre a falta.",
+        "Isso não é o funcionamento normal, não manda desligar a bateria e não diz que ela está bem carregada nem que precisa de água."
+      ],
+      "glossary": [
+        {"word": "ammeter", "meaning": "Amperímetro, o instrumento que mostra a corrente elétrica. No avião, indica se a bateria carrega ou descarrega."},
+        {"word": "minus value", "meaning": "Valor negativo. Aqui, a corrente sai da bateria em vez de entrar nela."},
+        {"word": "generator", "meaning": "Gerador, que produz eletricidade a partir do motor."},
+        {"word": "alternator", "meaning": "Alternador, outro gerador de corrente usado no sistema elétrico."},
+        {"word": "output", "meaning": "A energia que o gerador entrega."},
+        {"word": "inadequate", "meaning": "Insuficiente, abaixo do que o avião está consumindo."},
+        {"word": "battery", "meaning": "Bateria."},
+        {"word": "charged", "meaning": "Carregada."}
+      ]
+    },
+    {
+      "id": "ai-5",
+      "theme": "aviation-information",
+      "prompt": "The angle formed by the chord of an airfoil and the direction of the relative wind is called the",
+      "options": [
+        {"id": "a", "text": "angle of incidence"},
+        {"id": "b", "text": "angle of attack"},
+        {"id": "c", "text": "stall angle of the wing"},
+        {"id": "d", "text": "pitch angle"},
+        {"id": "e", "text": "critical angle of attack"}
+      ],
+      "correct": "b",
+      "hint": "Separe três ideias. Como a asa está presa na fuselagem é uma. A atitude do nariz é outra. O ângulo entre a corda da asa e o vento que realmente chega nela é a terceira.",
+      "explanation": [
+        "Corda do aerofólio contra o vento relativo é a definição de angle of attack.",
+        "Angle of incidence é o ângulo em que a asa está fixada na fuselagem. Pitch é a atitude do nariz. Stall angle e critical angle of attack são o limite em que a asa perde sustentação, não o nome do ângulo em qualquer atitude."
+      ],
+      "glossary": [
+        {"word": "chord", "meaning": "Corda do aerofólio: a linha reta imaginária do bordo de ataque ao bordo de fuga."},
+        {"word": "airfoil", "meaning": "Aerofólio, o perfil da asa que produz sustentação."},
+        {"word": "relative wind", "meaning": "Vento relativo: o fluxo de ar em relação ao avião, no sentido oposto ao do movimento."},
+        {"word": "angle of incidence", "meaning": "Ângulo de incidência: como a asa está presa na fuselagem. Não muda em voo."},
+        {"word": "angle of attack", "meaning": "Ângulo de ataque: entre a corda da asa e o vento relativo."},
+        {"word": "stall angle of the wing", "meaning": "Ângulo de estol da asa, o ponto em que ela perde sustentação. É um caso limite, não a definição geral."},
+        {"word": "pitch angle", "meaning": "Ângulo de arfagem, a atitude do nariz para cima ou para baixo em relação ao horizonte."},
+        {"word": "critical angle of attack", "meaning": "Ângulo de ataque crítico, o máximo antes do estol. A pergunta pede o nome do ângulo em geral, não desse limite."}
+      ]
+    },
+    {
+      "id": "gs-1",
+      "theme": "general-science",
+      "prompt": "In the International System of Units, a measurement for mass is",
+      "options": [
+        {"id": "a", "text": "a meter"},
+        {"id": "b", "text": "a henry"},
+        {"id": "c", "text": "an ampere"},
+        {"id": "d", "text": "a kilometer"},
+        {"id": "e", "text": "a kilogram"}
+      ],
+      "correct": "e",
+      "hint": "Massa não é distância nem corrente elétrica. Descarte o que mede comprimento e o que mede eletricidade. A unidade de massa do SI é a que você usa numa balança.",
+      "explanation": [
+        "No Sistema Internacional, massa se mede em quilograma.",
+        "Metro e quilômetro medem comprimento. Ampere mede corrente elétrica. Henry mede indutância."
+      ],
+      "glossary": [
+        {"word": "International System of Units", "meaning": "Sistema Internacional de Unidades, o SI. Define metro, quilograma, segundo, ampere e outras unidades de base."},
+        {"word": "measurement", "meaning": "Medida, a unidade usada para expressar a grandeza."},
+        {"word": "mass", "meaning": "Massa, a quantidade de matéria. Não é o mesmo que peso, embora no dia a dia a balança misture as duas ideias."},
+        {"word": "meter", "meaning": "Metro, unidade de comprimento."},
+        {"word": "henry", "meaning": "Henry, unidade de indutância elétrica."},
+        {"word": "ampere", "meaning": "Ampere, unidade de corrente elétrica."},
+        {"word": "kilometer", "meaning": "Quilômetro, mil metros. Continua sendo comprimento."},
+        {"word": "kilogram", "meaning": "Quilograma, a unidade de massa do SI."}
+      ]
+    },
+    {
+      "id": "gs-2",
+      "theme": "general-science",
+      "prompt": "What is energy called that is derived from Earth's internal heat?",
+      "options": [
+        {"id": "a", "text": "Hydroelectric"},
+        {"id": "b", "text": "Solar"},
+        {"id": "c", "text": "Thermodynamic"},
+        {"id": "d", "text": "Volcanic"},
+        {"id": "e", "text": "Geothermal"}
+      ],
+      "correct": "e",
+      "hint": "Olhe as duas metades da palavra certa: uma fala da Terra e a outra fala de calor. A energia vem de dentro do planeta, não do sol nem da queda de água.",
+      "explanation": [
+        "Calor interno da Terra é energia geotérmica, geothermal.",
+        "Hydroelectric vem da água. Solar vem do sol. Thermodynamic é o ramo da física, não o nome dessa fonte. Volcanic descreve vulcão, que é uma manifestação, não o nome da energia."
+      ],
+      "glossary": [
+        {"word": "derived", "meaning": "Obtida a partir de. A energia sai dessa fonte."},
+        {"word": "internal heat", "meaning": "Calor interno, o calor que já existe dentro da Terra."},
+        {"word": "Hydroelectric", "meaning": "Hidrelétrica, energia da água em movimento."},
+        {"word": "Solar", "meaning": "Solar, energia do sol."},
+        {"word": "Thermodynamic", "meaning": "Termodinâmico, relativo ao estudo do calor e da energia. Não é o nome da fonte."},
+        {"word": "Volcanic", "meaning": "Vulcânico. Um vulcão mostra o calor interno, mas não é o nome da energia."},
+        {"word": "Geothermal", "meaning": "Geotérmica. Geo = Terra, thermal = calor."}
+      ]
+    },
+    {
+      "id": "gs-3",
+      "theme": "general-science",
+      "prompt": "Compounds that include fat and oils found in foods and the human body are",
+      "options": [
+        {"id": "a", "text": "proteins"},
+        {"id": "b", "text": "lipids"},
+        {"id": "c", "text": "vitamins"},
+        {"id": "d", "text": "minerals"},
+        {"id": "e", "text": "carbohydrates"}
+      ],
+      "correct": "b",
+      "hint": "Gordura e óleo formam um grupo só na química dos alimentos. Proteína e carboidrato são grupos vizinhos, mas não são gordura.",
+      "explanation": [
+        "Gorduras e óleos são lipídios.",
+        "Proteínas são outro grupo, carboidratos também. Vitaminas e minerais não são definidos como gorduras e óleos."
+      ],
+      "glossary": [
+        {"word": "Compounds", "meaning": "Compostos, substâncias formadas por mais de um elemento."},
+        {"word": "fat", "meaning": "Gordura."},
+        {"word": "oils", "meaning": "Óleos."},
+        {"word": "proteins", "meaning": "Proteínas, compostos de aminoácidos. Não são gordura."},
+        {"word": "lipids", "meaning": "Lipídios, o grupo que inclui gorduras e óleos."},
+        {"word": "vitamins", "meaning": "Vitaminas."},
+        {"word": "minerals", "meaning": "Minerais, como cálcio e ferro na nutrição."},
+        {"word": "carbohydrates", "meaning": "Carboidratos, como açúcares e amidos."}
+      ]
+    },
+    {
+      "id": "gs-4",
+      "theme": "general-science",
+      "prompt": "Resistance is the tendency for a material to oppose the flow of electrons and is measured in",
+      "options": [
+        {"id": "a", "text": "currents"},
+        {"id": "b", "text": "amperes"},
+        {"id": "c", "text": "ohms"},
+        {"id": "d", "text": "watts"},
+        {"id": "e", "text": "volts"}
+      ],
+      "correct": "c",
+      "hint": "Separe as grandezas. Corrente é uma, tensão é outra, potência é outra. A oposição à passagem dos elétrons tem a unidade que aparece na lei de Ohm.",
+      "explanation": [
+        "Resistência elétrica se mede em ohms.",
+        "Ampere mede corrente. Volt mede tensão. Watt mede potência. Currents é o nome da grandeza corrente, não uma unidade de resistência."
+      ],
+      "glossary": [
+        {"word": "Resistance", "meaning": "Resistência elétrica, a dificuldade que o material oferece à corrente."},
+        {"word": "oppose", "meaning": "Opor-se, dificultar."},
+        {"word": "flow of electrons", "meaning": "Fluxo de elétrons, isto é, a corrente elétrica."},
+        {"word": "currents", "meaning": "Correntes. É a grandeza que flui, não a unidade da resistência."},
+        {"word": "amperes", "meaning": "Amperes, a unidade de corrente elétrica."},
+        {"word": "ohms", "meaning": "Ohms, a unidade de resistência elétrica."},
+        {"word": "watts", "meaning": "Watts, a unidade de potência."},
+        {"word": "volts", "meaning": "Volts, a unidade de tensão elétrica."}
+      ]
+    },
+    {
+      "id": "gs-5",
+      "theme": "general-science",
+      "prompt": "In order for a lunar eclipse to take place, the",
+      "options": [
+        {"id": "a", "text": "moon must be between the sun and the Earth"},
+        {"id": "b", "text": "moon must be in early crescent phase"},
+        {"id": "c", "text": "Earth must be between the sun and the moon"},
+        {"id": "d", "text": "Earth's axis of rotation must point toward the moon"},
+        {"id": "e", "text": "Earth and moon must be on opposite sides of the sun"}
+      ],
+      "correct": "c",
+      "hint": "Eclipse da Lua: a sombra de alguém cobre a Lua. Coloque Sol, Terra e Lua em linha e veja quem precisa ficar no meio para a sombra da Terra atingir a Lua.",
+      "explanation": [
+        "No eclipse lunar, a ordem é Sol, Terra e Lua. A Terra fica no meio e faz sombra na Lua.",
+        "Lua entre o Sol e a Terra é o eclipse solar. A fase crescente e a inclinação do eixo não definem o eclipse. Estar em lados opostos do Sol, sem a Terra no meio do alinhamento, também não."
+      ],
+      "glossary": [
+        {"word": "lunar eclipse", "meaning": "Eclipse lunar: a Lua entra na sombra da Terra e escurece."},
+        {"word": "take place", "meaning": "Acontecer, ocorrer."},
+        {"word": "moon", "meaning": "Lua."},
+        {"word": "sun", "meaning": "Sol."},
+        {"word": "Earth's", "meaning": "Da Terra. Aqui, o eixo em torno do qual o planeta gira."},
+        {"word": "Earth", "meaning": "Terra."},
+        {"word": "crescent", "meaning": "Crescente, a fase em que só uma borda da Lua está iluminada. Não é a condição do eclipse."},
+        {"word": "axis of rotation", "meaning": "Eixo de rotação, a linha imaginária em torno da qual a Terra gira."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "full": {
+    "name": "Simulado completo no formato publicado em 2026",
+    "description": "Doze seções na ordem da Pearson VUE, com os tempos publicados. O intervalo de 15 minutos pode ser pulado no treino.",
+    "sections": [
+      [
+        "verbal-analogies",
+        25,
+        8
+      ],
+      [
+        "arithmetic-reasoning",
+        25,
+        29
+      ],
+      [
+        "word-knowledge",
+        25,
+        5
+      ],
+      [
+        "math-knowledge",
+        25,
+        22
+      ],
+      [
+        "reading-comprehension",
+        25,
+        24
+      ],
+      [
+        "situational-judgment",
+        16,
+        35
+      ],
+      [
+        "break",
+        0,
+        15
+      ],
+      [
+        "self-description",
+        16,
+        45
+      ],
+      [
+        "physical-science",
+        20,
+        10
+      ],
+      [
+        "table-reading",
+        40,
+        7
+      ],
+      [
+        "instrument-comprehension",
+        25,
+        5
+      ],
+      [
+        "block-counting",
+        30,
+        5
+      ],
+      [
+        "aviation-information",
+        20,
+        8
+      ]
+    ]
+  },
+  "verbal": {
+    "name": "Área verbal",
+    "description": "Analogias, vocabulário e leitura.",
+    "sections": [
+      [
+        "verbal-analogies",
+        25,
+        8
+      ],
+      [
+        "word-knowledge",
+        25,
+        5
+      ],
+      [
+        "reading-comprehension",
+        25,
+        24
+      ]
+    ]
+  },
+  "quantitative": {
+    "name": "Área quantitativa",
+    "description": "Raciocínio aritmético e conhecimento de matemática. O destacamento AFROTC descreve o composto quantitativo com esses dois subtestes.",
+    "sections": [
+      [
+        "arithmetic-reasoning",
+        25,
+        29
+      ],
+      [
+        "math-knowledge",
+        25,
+        22
+      ]
+    ]
+  },
+  "aviation": {
+    "name": "Aviação",
+    "description": "Informação de aviação e leitura de instrumentos no modelo de treino.",
+    "sections": [
+      [
+        "aviation-information",
+        20,
+        8
+      ],
+      [
+        "instrument-comprehension",
+        25,
+        5
+      ]
+    ]
+  },
+  "science": {
+    "name": "Ciência física",
+    "description": "Somente Physical Science.",
+    "sections": [
+      [
+        "physical-science",
+        20,
+        10
+      ]
+    ]
+  },
+  "spatial": {
+    "name": "Raciocínio espacial e tabela",
+    "description": "Tabela, instrumentos e blocos.",
+    "sections": [
+      [
+        "table-reading",
+        40,
+        7
+      ],
+      [
+        "instrument-comprehension",
+        25,
+        5
+      ],
+      [
+        "block-counting",
+        30,
+        5
+      ]
+    ]
+  },
+  "judgment": {
+    "name": "Julgamento situacional",
+    "description": "Rubrica de treino. Não produz percentil nem gabarito oficial.",
+    "sections": [
+      [
+        "situational-judgment",
+        16,
+        35
+      ]
+    ]
+  },
+  "cyber-track": {
+    "name": "Trilha de comissionamento com ênfase verbal e quantitativa",
+    "description": "Não é uma prova de Cyber Knowledge. O DAFMAN trata esse teste à parte. A trilha treina os mínimos publicados de Verbal e Quantitative e aumenta a dificuldade se o acerto passar de 80%.",
+    "sections": [
+      [
+        "verbal-analogies",
+        25,
+        8
+      ],
+      [
+        "word-knowledge",
+        25,
+        5
+      ],
+      [
+        "reading-comprehension",
+        15,
+        15
+      ],
+      [
+        "arithmetic-reasoning",
+        25,
+        29
+      ],
+      [
+        "math-knowledge",
+        25,
+        22
+      ]
+    ]
+  }
+}
