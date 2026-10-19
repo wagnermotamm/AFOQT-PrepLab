@@ -187,6 +187,9 @@ function restore() {
 }
 
 function validate(bank) {
+  if (!bank || !Array.isArray(bank.themes) || !Array.isArray(bank.questions)) {
+    return ["banco incompleto"];
+  }
   const themes = new Set(bank.themes.map((theme) => theme.id));
   const seen = new Set();
   const errors = [];
@@ -194,14 +197,23 @@ function validate(bank) {
     if (seen.has(question.id)) errors.push(`id repetido: ${question.id}`);
     seen.add(question.id);
     if (!themes.has(question.theme)) errors.push(`tema inválido: ${question.id}`);
-    if (!question.options.some((option) => option.id === question.correct)) {
+    const options = Array.isArray(question.options) ? question.options : [];
+    if (options.length < 2) {
+      errors.push(`opções inválidas: ${question.id}`);
+      return;
+    }
+    if (!options.some((option) => option.id === question.correct)) {
       errors.push(`gabarito inválido: ${question.id}`);
     }
     if (question.usesTable) {
+      if (!bank.table || !Array.isArray(bank.table.x) || !Array.isArray(bank.table.rows)) {
+        errors.push(`tabela ausente: ${question.id}`);
+        return;
+      }
       const col = bank.table.x.indexOf(question.x);
       const row = bank.table.rows.find((item) => item.y === question.y);
       const value = row && col >= 0 ? String(row.cells[col]) : "";
-      const correct = question.options.find((option) => option.id === question.correct);
+      const correct = options.find((option) => option.id === question.correct);
       if (!correct || correct.text !== value) errors.push(`tabela divergente: ${question.id}`);
     }
   });
